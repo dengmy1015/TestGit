@@ -8,3 +8,5 @@ Creating a new branch is quick.
 test switch
 
 test2
+feature2
+
