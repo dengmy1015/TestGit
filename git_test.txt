@@ -12,3 +12,4 @@ feature
 
 
 branch with no-ff
+bug branch
