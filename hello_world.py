@@ -1,6 +1,8 @@
 #from hashids import Hashids
 
-#String
+
+######################################################################
+#String: "" or '' is ok!
 message = "Hello Python world!"
 print(message)
 message = 'Hello Python world!'
@@ -10,99 +12,119 @@ print(message)
 message = "Hello 'Python' world!"
 print(message)
 
-#
+#String case change
 print(message.title())
 print(message.upper())
-print(message.lower())
+print(message.lower())#FFFFFF
+
+#tab and enter
 print("\n\t" + message.title() + "\n\t" + message.upper() + "\n\t" + message.lower())
 message = " Deng Meiyan  \t"
 
-#trim
+#trim and connect
 print(message.rstrip() + "End")
 print(message.lstrip() + "End")
 print(message.strip() + "End")
 
-#keisan
+#Calculate
 print(3+2)
 print(3-2)
 print(3*2)
 print(3/2)
-print(3**2)
+print(3**2) #2 to the power of 3
 
 
 print(0.3+0.2)
 print(3*0.2)
 
-#int to string
+#int convert to string
 age = 37
 message = "Happy " + str(age) + "th birthday!"
 print(message)
+######################################################################
 
-#array
+
+
+######################################################################
+#arrayList index is from 0. arrayList[index]
 colors = ["black", "white", "yellow", "blue", "red", "green"]
 print(colors)
 print(colors[3].title())
 
-#array last one
+#arrayList last one
 print(colors[-1])
 print(colors[-3])
 
-#array modify
+#arrayList modify
 colors[3] = "purple"
 print(colors)
 
-#array append(value)
+#arrayList append(value)
 colors.append("blue")
 print(colors)
 
-#array insert(index, value)
+#arrayList insert(index, value)
 colors.insert(2, "orange")
 print(colors)
 
 
-#array delete.del
+#arrayList delete:del arrayList[index]
 del colors[2]
 print(colors)
 
 
-#array delete.pop(index)
+#arrayList delete:pop(index)
+#pop(): delete the last one
+#pop(index): delete the one of index
 color_pop = colors.pop(2)
 print(color_pop)
 print(colors)
 
+#The different with del and pop:
+#del: the element that was deleted can't be used any more.
+#pop: the element that was poped can be saved into a variation.
 
-#array remove(value)
+
+#arrayList remove(value): remove the first one that equals to the value
 color_remove = "red"
 colors.remove(color_remove)
 print(colors)
 colors.append(color_remove)
 print(colors)
 
-#array sort
+
+######################################################################
+#arrayList sort: change the order forever
 colors.sort()
 print(colors)
 
+#arrayList sort(reverse=True): change the order reversely forever
 colors.sort(reverse=True)
 print(colors)
 
-#array sorted
+#arrayList sorted: change the order temporarily
 print(sorted(colors))
 print(colors)
 colors.sort()
 print(colors)
+
+#arrayList sorted(reverse=True): change the order reversely temporarily
+print(sorted(colors))
 print(sorted(colors, reverse=True))
 print(colors)
 
 
-#array reverse
+#arrayList.reverse()
 chars = ['b','a','e','d','c']
 chars.reverse()
 print(chars)
 
 
-#array len()
+#len(arrayList): return the length of the arrayList
 print(len(chars))
 
+
+######################################################################
 #loop: indent is very important! (4 space, not tab)
 #loop: Don't forget ":"
 for color in colors:
