@@ -134,6 +134,7 @@ print(color)
 
 
 #range
+#print 1~4
 for value in range(1, 5):
     print(value)
 
@@ -145,13 +146,13 @@ print(numbers)  #[1, 2, 3, 4, 5]
 
 
 even_numbers = list(range(2,11,2))
-print(even_numbers) #[2, 4, 6, 8, 18]
+print(even_numbers) #[2, 4, 6, 8, 10]
 
 
 squares = []
 for value in range(1,11):
     squares.append(value**2)
-print(squares)
+print(squares)  #[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 
 #min, max, sum of the range
@@ -159,18 +160,22 @@ print(min(squares))
 print(max(squares))
 print(sum(squares))
 
-
-squares = [value**3 for value in range(1, 11)]
+# loop can also be simply coded like this:
+squares = [value**2 for value in range(1, 11)]
 print(squares)
 
+cubes = [value**2 for value in range(1, 11)]
+print(cubes)
 
-#part of list
+
+#part of arrayList
 orders = ["0", "1", "2", "3", "4", "5", "6", "7"]
 print(orders[1:3])
 print(orders[:3])
 print(orders[3:])
 print(orders[-3:])
 
+#loop in the part of arrayList
 for order in orders[-3:]:
     print(order)
 
@@ -199,6 +204,7 @@ for dimension in dimensions:
     print(dimension)
 
 
+########################################################################
 #if...else...
 cars = ['toyota','audi','honda','bmw']
 for car in cars:
@@ -210,6 +216,12 @@ for car in cars:
 
 
 
+
+
+
+
+
+##########################################################################
 #hex
 hex_1 = bytes.fromhex("abcd")
 print(hex_1)
